@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("addNewTodo", todoName => {
+    cy.get(".todo-input").type(todoName + "{enter}")
+
+    cy.get(".success").should("be.visible")
+
+    cy.get(".todo-item").last().should("contain.text", todoName)
+})
