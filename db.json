@@ -1,98 +1,60 @@
 {
-    "todos": [
-        {
-            "name": "ff",
-            "id": 3771,
-            "isComplete": true
-        },
-        {
-            "id": 5687
-        },
-        {
-            "id": 111,
-            "name": "depuis cyrpress",
-            "isComplete": false
-        },
-        {
-            "name": "depuis cyrpress",
-            "isComplete": false,
-            "id": 5688
-        },
-        {
-            "name": "depuis cyrpress haha",
-            "isComplete": false,
-            "id": 5689
-        },
-        {
-            "name": "depuis cyrpress haha",
-            "isComplete": false,
-            "id": 5690
-        },
-        {
-            "name": "depuis cyrpress haha",
-            "isComplete": false,
-            "id": 5691
-        },
-        {
-            "name": "depuis cyrpress haha",
-            "isComplete": false,
-            "id": 5692
-        },
-        {
-            "name": "depuis cyrpress haha",
-            "isComplete": false,
-            "id": 5693
-        }
-    ],
-    "users": [
-        {
-            "email": "olivier@mail.com",
-            "password": "$2a$10$.JUGmdIEktAji4NjSw6YBO16MIZsHW0c1iArb92nD/e33if6gnnxC",
-            "firstname": "Olivier",
-            "lastname": "Monge",
-            "age": 32,
-            "id": 1
-        },
-        {
-            "email": "hatem.hatamleh@gmail.com",
-            "password": "$2a$10$WGWOle/Rlii9hJX8Aud4oe3SUyh11vfUTNgNgZoL/7gG1lzV2w5Ue",
-            "firstname": "Hatem",
-            "lastname": "Hatamleh",
-            "age": 33,
-            "id": 2
-        },
-        {
-            "email": "test@mail.com",
-            "password": "$2a$10$LOHNy2rbllaS1Brd8rvrdO5CfuIEun/ANXlt99ivs0dnvMwnAc7QS",
-            "id": 3
-        },
-        {
-            "email": "lydstyl@mail.com",
-            "password": "123",
-            "firstname": "Olivier",
-            "lastname": "Monge",
-            "age": 32,
-            "id": 4
-        }
-    ],
-    "courses": [
-        {
-            "id": 1,
-            "courseTitle": "Full selenium course",
-            "duration": "18 hours",
-            "videos": 180
-        },
-        {
-            "id": 2,
-            "courseTitle": "Full appium course",
-            "duration": "16 hours",
-            "videos": 140
-        },
-        {
-            "id": 3,
-            "courseTitle": "Full Cypress course",
-            "duration": "8 hours",
-            "videos": 100
-        }
-    ]
+  "todos": [
+    {
+      "name": "CY new todo",
+      "id": 9328,
+      "isComplete": false
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$.JUGmdIEktAji4NjSw6YBO16MIZsHW0c1iArb92nD/e33if6gnnxC",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 1
+    },
+    {
+      "email": "hatem.hatamleh@gmail.com",
+      "password": "$2a$10$WGWOle/Rlii9hJX8Aud4oe3SUyh11vfUTNgNgZoL/7gG1lzV2w5Ue",
+      "firstname": "Hatem",
+      "lastname": "Hatamleh",
+      "age": 33,
+      "id": 2
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$LOHNy2rbllaS1Brd8rvrdO5CfuIEun/ANXlt99ivs0dnvMwnAc7QS",
+      "id": 3
+    },
+    {
+      "email": "lydstyl@mail.com",
+      "password": "123",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 4
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "courseTitle": "Full selenium course",
+      "duration": "18 hours",
+      "videos": 180
+    },
+    {
+      "id": 2,
+      "courseTitle": "Full appium course",
+      "duration": "16 hours",
+      "videos": 140
+    },
+    {
+      "id": 3,
+      "courseTitle": "Full Cypress course",
+      "duration": "8 hours",
+      "videos": 100
+    }
+  ]
 }
