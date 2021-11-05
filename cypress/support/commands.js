@@ -26,8 +26,11 @@
 
 Cypress.Commands.add("addNewTodo", todoName => {
     cy.get(".todo-input").type(todoName + "{enter}")
+    if (todoName) {
+        cy.get(".success").should("be.visible")
 
-    cy.get(".success").should("be.visible")
-
-    cy.get(".todo-item").last().should("contain.text", todoName)
+        cy.get(".todo-item").last().should("contain.text", todoName)
+    } else {
+        cy.get(".error").should("be.visible")
+    }
 })

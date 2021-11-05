@@ -22,6 +22,10 @@ describe("Todo UI testing", () => {
         cy.get(".todo-item .delete-item").click()
     })
 
+    it("Should not add an empty todo.", () => {
+        cy.addNewTodo("")
+    })
+
     afterEach(() => {
         // cy.get(".todo-item a").each(deleteButton => {
         //     cy.wrap(deleteButton).click()
