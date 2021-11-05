@@ -12,7 +12,25 @@ describe("Filter functionalities test cases.", () => {
         // cy.get(".todo-item .todo-checkbox").last().check().should("be.checked")
     })
 
-    it("bla", () => {})
+    it("Should filter the completed todos correctly.", () => {
+        cy.contains("Complete").click()
+
+        cy.url().should("contain", "/complete")
+
+        cy.get(".todo-checkbox").each($todo => {
+            cy.wrap($todo).should("be.checked")
+        })
+    })
+
+    it("Should filter the active todos correctly.", () => {
+        cy.contains("Active").click()
+
+        cy.url().should("contain", "/active")
+
+        cy.get(".todo-checkbox").each($todo => {
+            cy.wrap($todo).should("not.be.checked")
+        })
+    })
 
     after(() => {
         cy.get("body").then($el => {
