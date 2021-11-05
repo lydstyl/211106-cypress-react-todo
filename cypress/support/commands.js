@@ -34,3 +34,16 @@ Cypress.Commands.add("addNewTodo", todoName => {
         cy.get(".error").should("be.visible")
     }
 })
+
+Cypress.Commands.add("addDummyTodos", () => {
+    const todos = [
+        { name: "Learn cypress", isComplete: false },
+        { name: "Build framwork", isComplete: true },
+        { name: "Shopping", isComplete: false },
+        { name: "Drink coffe", isComplete: true },
+    ]
+
+    todos.forEach(todo => {
+        cy.request("POST", "http://localhost:8080/todos", todo)
+    })
+})
