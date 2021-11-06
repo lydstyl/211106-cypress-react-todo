@@ -1,0 +1,6 @@
+[
+    { "name": "Learn JS", "isComplete": false },
+    { "name": "Build framwork", "isComplete": false },
+    { "name": "Shopping", "isComplete": false },
+    { "name": "Play sport", "isComplete": true }
+]
