@@ -5,8 +5,15 @@ describe("Todo UI testing", () => {
         cy.visit("/")
     })
 
-    it("Should add a new todo correctly.", () => {
-        cy.addNewTodo("CY todo 1")
+    it.only("Should add a new todo correctly.", () => {
+        cy.intercept("POST", "http://localhost:8080/todos").as("postRequest")
+
+        const todoName = "CY todo 1"
+        cy.addNewTodo(todoName)
+
+        cy.wait("@postRequest").then(xhr => {
+            expect(xhr.request.body.name).to.eq(todoName)
+        })
     })
 
     it("Should be able to toggle the status of a todo correctly.", () => {
@@ -30,7 +37,6 @@ describe("Todo UI testing", () => {
         // cy.get(".todo-item a").each(deleteButton => {
         //     cy.wrap(deleteButton).click()
         // })
-
         cy.get("body").then($el => {
             if ($el.find(".todo-item").length) {
                 cy.get(".todo-item a").click({ multiple: true })
